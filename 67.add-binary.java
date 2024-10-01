@@ -14,10 +14,10 @@ class Solution {
         while(i>=0||j>=0){
             int sum=0;
             if(i>=0){
-                sum += Integer.parseInt(String.valueOf(a.charAt(i--)));
+                sum += a.charAt(i--)-'0';
             }
             if(j>=0){
-                sum += Integer.parseInt(String.valueOf(b.charAt(j--)));
+                sum += b.charAt(j--)-'0';
             }
             sum+=carry;
             result.append(sum%2);
